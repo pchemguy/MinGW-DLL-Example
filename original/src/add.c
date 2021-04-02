@@ -1,13 +1,12 @@
 /* add.c
 
-   Demonstrates creating a DLL with an exported function and imported variables.
+     Demonstrates creating a DLL with an exported function and imported variables.
 */
 
 #include "add.h"
 
-int ADDCALL Add(int a, int b)
-{
-  return (a + b);
+int ADDCALL Add(int a, int b){
+    return (a + b);
 }
 
 /* Assign values to exported variables. */

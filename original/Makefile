@@ -18,8 +18,10 @@ EXE_CFLAGS = -O2 -std=c99 ${WARNS} -Iinclude
 DLL_CFLAGS = ${EXE_CFLAGS} -D ADD_EXPORTS
 
 # Linker flags
-DLL_LDFLAGS = -shared -s -Wl,--subsystem,windows,--out-implib,lib/libaddlib.a
-EXE_LDFLAGS = -Llib -laddlib -s -Wl,--subsystem,console
+# DLL_LDFLAGS = -shared -s -Wl,--subsystem,windows,--out-implib,lib/libaddlib.a
+# EXE_LDFLAGS = -Llib -laddlib -s -Wl,--subsystem,console
+DLL_LDFLAGS = -shared -Wl,--subsystem,windows,--out-implib,lib/libaddlib.a
+EXE_LDFLAGS = -Llib -lAddLib -Wl,--subsystem,console
 
 .PHONY: all clean
 

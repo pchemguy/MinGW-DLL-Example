@@ -7,10 +7,9 @@
 #include <stdio.h>
 #include <add.h>
 
-int main(int argc, char** argv)
-{
-  /* Add foo and bar variables exported from the DLL */
-  printf("%d + %d = %d\n", foo, bar, Add(foo, bar));
+int main(int argc, char** argv){
+    /* Add foo and bar variables exported from the DLL */
+    printf("%d + %d = %d\n", foo, bar, Add(foo, bar));
 
-  return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
